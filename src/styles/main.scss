@@ -25,23 +25,74 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  margin: 20px;
+  text-align: center;
+}
+
 p {
-  margin: 0px 20px;
+  margin: 10px 10px;
   text-align: center;
 }
 
 .answers {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px;
+  margin: 10px 50px 50px;
 }
 
 .answer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 30px;
   max-width: 250px;
+  border: solid black 0.5px;
+  img {
+    width: 192px;
+    height: 192px;
+  }
 }
 
 .correct-incorrect {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 70px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.button span:after {
+  content: '\00bb';
+  // content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }

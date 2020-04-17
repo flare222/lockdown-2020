@@ -2,6 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import data from '../data/data'
+import laptop from '../assets/laptop.gif'
+import bus from '../assets/bus.gif'
+import date from '../assets/date.gif'
+import shame from '../assets/shame.gif'
 
 
 export default class Day3 extends React.Component {
@@ -30,35 +34,35 @@ export default class Day3 extends React.Component {
   render() {
     console.log('correct', this.state.showCorrect)
     console.log('incorrect', this.state.showIncorrect)
-    const lvl2 = this.state.lvl2
+    const lvl3 = this.state.lvl3
     return (
     <>
     {this.state.showCorrect === false && this.state.showIncorrect === false ?
     <section>
-      <h1>{lvl2.title}</h1>
-      <h2>{lvl2.scenario}</h2>
+      <h1>{lvl3.title}</h1>
+      <h2>{lvl3.scenario}</h2>
       
       <div>
-        <p>{lvl2.question}</p>
+        <h3>{lvl3.question}</h3>
       </div>
       
       <div className="answers">
         <div className="answer"
-        onClick={this.handleClick2}>
-          <p>{lvl2.answers[0]}</p>
-          {/* <img src={tape} alt="tape measure" /> */}
+        onClick={this.handleClick1}>
+          <p>{lvl3.answers[0]}</p>
+          <img src={laptop} alt="laptop" />
         </div>
       
         <div className="answer"
-        onClick={this.handleClick1}>
-          <p>{lvl2.answers[1]}</p>
-          {/* <img src={broom} alt="broom" /> */}
+        onClick={this.handleClick2}>
+          <p>{lvl3.answers[1]}</p>
+          <img src={bus} alt="bus" />
         </div>
         
         <div className="answer"
         onClick={this.handleClick2}>
-          <p>{lvl2.answers[2]}</p>
-          {/* <img src={twometres} alt="broom" /> */}
+          <p>{lvl3.answers[2]}</p>
+          <img src={date} alt="date in the park" />
         </div>
         
       </div>
@@ -68,24 +72,25 @@ export default class Day3 extends React.Component {
       {this.state.showCorrect === false ? null :
       <>
       <h1>Correct!</h1>
-      <h2>{lvl2.correct}</h2>
+      <h2>{lvl3.correct}</h2>
       <div className="correct-incorrect">
-        {/* <img src={littleguy} alt="little guy" /> */}
+        {/* <img src={shame} alt="bells of shame" /> */}
+        <Link to='/end'>
+        <button type="button" className="button" align="center"><span>Continue</span></button>
+        </Link>
       </div>
-      <Link to='/day3'>
-      <button type="button">Continue</button>
-      </Link>
+
       </>
       }
 
       {this.state.showIncorrect === false ? null :
           <>
           <h1>Incorrect Answer</h1>
-          <h2>{lvl2.incorrect}</h2>
+          <h2>{lvl3.incorrect}</h2>
           <div className="correct-incorrect">
-            {/* <img src={littleguy} alt="little guy" /> */}
+            <img src={shame} alt="bells of shame" />
+            <button type="button" className="button" align="center" onClick={this.handleClick3}><span>Try Again</span></button>
           </div>
-          <button type="button" onClick={this.handleClick3}>Try Again</button>
         </>
       }
 

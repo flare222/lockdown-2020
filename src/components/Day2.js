@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import data from '../data/data'
+import tpaper from '../assets/tpaper.gif'
+import share from '../assets/share.gif'
+import shame from '../assets/shame.gif'
 
 
 export default class Day2 extends React.Component {
@@ -39,14 +42,14 @@ export default class Day2 extends React.Component {
       <h2>{lvl2.scenario}</h2>
       
       <div>
-        <p>{lvl2.question}</p>
+        <h3>{lvl2.question}</h3>
       </div>
       
       <div className="answers">
         <div className="answer"
         onClick={this.handleClick2}>
           <p>{lvl2.answers[0]}</p>
-          {/* <img src={tape} alt="tape measure" /> */}
+          <img src={tpaper} alt="toilet paper" />
         </div>
       
         <div className="answer"
@@ -62,6 +65,7 @@ export default class Day2 extends React.Component {
         </div>
         
       </div>
+
       </section>
       : null} 
 
@@ -70,11 +74,11 @@ export default class Day2 extends React.Component {
       <h1>Correct!</h1>
       <h2>{lvl2.correct}</h2>
       <div className="correct-incorrect">
-        {/* <img src={littleguy} alt="little guy" /> */}
-      </div>
-      <Link to='/day3'>
-      <button type="button">Continue</button>
+        <img src={share} alt="heart in a basket" />
+        <Link to='/day3'>
+      <button type="button" className="button" align="center"><span>Continue</span></button>
       </Link>
+      </div>
       </>
       }
 
@@ -83,9 +87,9 @@ export default class Day2 extends React.Component {
           <h1>Incorrect Answer</h1>
           <h2>{lvl2.incorrect}</h2>
           <div className="correct-incorrect">
-            {/* <img src={littleguy} alt="little guy" /> */}
+            <img src={shame} alt="bells of shame" />
+            <button type="button" className="button" align="center" onClick={this.handleClick3}><span>Try Again</span></button>
           </div>
-          <button type="button" onClick={this.handleClick3}>Try Again</button>
         </>
       }
 
