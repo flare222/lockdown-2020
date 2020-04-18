@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/lockdown-2020/static/css/main.47202b5f.chunk.css",
+    "main.js": "/lockdown-2020/static/js/main.759e9d3d.chunk.js",
+    "main.js.map": "/lockdown-2020/static/js/main.759e9d3d.chunk.js.map",
+    "runtime-main.js": "/lockdown-2020/static/js/runtime-main.58404b60.js",
+    "runtime-main.js.map": "/lockdown-2020/static/js/runtime-main.58404b60.js.map",
+    "static/js/2.a81acf76.chunk.js": "/lockdown-2020/static/js/2.a81acf76.chunk.js",
+    "static/js/2.a81acf76.chunk.js.map": "/lockdown-2020/static/js/2.a81acf76.chunk.js.map",
+    "index.html": "/lockdown-2020/index.html",
+    "precache-manifest.bd2a0edd12f61e8cee95451fc1084baa.js": "/lockdown-2020/precache-manifest.bd2a0edd12f61e8cee95451fc1084baa.js",
+    "service-worker.js": "/lockdown-2020/service-worker.js",
+    "static/css/main.47202b5f.chunk.css.map": "/lockdown-2020/static/css/main.47202b5f.chunk.css.map",
+    "static/js/2.a81acf76.chunk.js.LICENSE.txt": "/lockdown-2020/static/js/2.a81acf76.chunk.js.LICENSE.txt",
+    "static/media/book.gif": "/lockdown-2020/static/media/book.a4bd215e.gif",
+    "static/media/bunny.gif": "/lockdown-2020/static/media/bunny.9091ad34.gif",
+    "static/media/bus.gif": "/lockdown-2020/static/media/bus.93592f45.gif",
+    "static/media/chocolate.gif": "/lockdown-2020/static/media/chocolate.ce639ace.gif",
+    "static/media/date.gif": "/lockdown-2020/static/media/date.2359d0f6.gif",
+    "static/media/laptop.gif": "/lockdown-2020/static/media/laptop.1d7643e7.gif",
+    "static/media/shame.gif": "/lockdown-2020/static/media/shame.34db96ca.gif",
+    "static/media/share.gif": "/lockdown-2020/static/media/share.3e23427a.gif",
+    "static/media/shopping.gif": "/lockdown-2020/static/media/shopping.45139c62.gif",
+    "static/media/sticks.gif": "/lockdown-2020/static/media/sticks.7a5dd524.gif",
+    "static/media/tape.gif": "/lockdown-2020/static/media/tape.7d157169.gif",
+    "static/media/taytos.gif": "/lockdown-2020/static/media/taytos.29c4fd28.gif",
+    "static/media/time.gif": "/lockdown-2020/static/media/time.377a1b84.gif",
+    "static/media/tpaper.gif": "/lockdown-2020/static/media/tpaper.4e1d53a5.gif",
+    "static/media/treatyoself.gif": "/lockdown-2020/static/media/treatyoself.614e12fa.gif",
+    "static/media/two.gif": "/lockdown-2020/static/media/two.1e21385f.gif",
+    "static/media/twometres.gif": "/lockdown-2020/static/media/twometres.b0a9a581.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.58404b60.js",
+    "static/js/2.a81acf76.chunk.js",
+    "static/css/main.47202b5f.chunk.css",
+    "static/js/main.759e9d3d.chunk.js"
+  ]
+}
