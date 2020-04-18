@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "90f4246a573125f9d4c7b9fec3f9f0e8",
+    "revision": "37a87482bc54a8844b0ca8d7d9d3c901",
     "url": "/lockdown-2020/index.html"
   },
   {
-    "revision": "c89d81e3043a47b4b498",
+    "revision": "572dc3df3babd0d78779",
     "url": "/lockdown-2020/static/css/main.47202b5f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lockdown-2020/static/js/2.a81acf76.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c89d81e3043a47b4b498",
-    "url": "/lockdown-2020/static/js/main.759e9d3d.chunk.js"
+    "revision": "572dc3df3babd0d78779",
+    "url": "/lockdown-2020/static/js/main.b93f580a.chunk.js"
   },
   {
     "revision": "46dee1ac8996dd513df4",
