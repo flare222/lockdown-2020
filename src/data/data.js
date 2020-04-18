@@ -29,22 +29,39 @@ const data = {
     {
       'title': 'Lockdown: Day Three',
       'scenario': 'A very attractive individual hits you up on Hinge.',
-      'question': 'Which of the below will ultimately be best for you and the potential love of your life?',
+      'question': 'Which of the below date options will ultimately be best for you and the potential love of your life?',
       'answers': [
         'Make use of the wealth of video-audio tools available in this day and age and jump on a call together', 
         'Jump on a bus and head straight over for some lockdown fun!', 
         'Ask to meet in the park, but stay two metres away, because that will totally work.'
       ],
-      'correct': 'Just think of the story you can tell in ten years time...',
+      'correct': 'Just think of the romantic "how we met" story you can tell in ten years time...',
       'instructions': '',
       'incorrect': 'You both caught the virus and put unnecessary strain on the NHS.  Needless to say, it didn\'t work out.'
     },
     {
       'title': 'Lockdown: Day Four',
+      'scenario': 'You\'ve eaten the contents of most the cupboards and the fridge, but you want to eat more out of pure boredom.',
+      'question': 'You decide to nibble on which of the following practical snacks?',
+      'answers': [
+        'Celery and carrot sticks because you\'ve already eaten five meals today',
+        'Sweet, sweet chocolate with all it\'s melty goodness to sustain you', 
+        'A packet of Taytos because you can probably have a pint to go with it', 
+      ],
+      'correct': 'Yesss... go for it!',
+      'incorrect': 'Fuck that shit.  You\'re not a rabbit!'
+    },
+    {
+      'title': 'Lockdown: Day Five',
       'scenario': 'You are fetching a prescription for a vulnerable person who cannot leave the house',
       'question': '',
-      'answers': ['', '', ''],
-      'instructions': 'Some instructions'
+      'answers': [
+        '', 
+        '', 
+        ''
+      ],
+      'correct': '',
+      'incorrect': ''
     }
   ]
 }

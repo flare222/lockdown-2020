@@ -5,6 +5,7 @@ import data from '../data/data'
 import laptop from '../assets/laptop.gif'
 import bus from '../assets/bus.gif'
 import date from '../assets/date.gif'
+import book from '../assets/book.gif'
 import shame from '../assets/shame.gif'
 
 
@@ -17,23 +18,18 @@ export default class Day3 extends React.Component {
 
   handleClick1 = () => {
     this.setState({ showCorrect: true })
-    console.log('click1')
   }
 
   handleClick2 = () => {
     this.setState({ showIncorrect: true })
-    console.log('click2')
   }
 
   handleClick3 = () => {
     this.setState({ showCorrect: false, showIncorrect: false })
-    console.log('click3')
   }
 
 
   render() {
-    console.log('correct', this.state.showCorrect)
-    console.log('incorrect', this.state.showIncorrect)
     const lvl3 = this.state.lvl3
     return (
     <>
@@ -74,8 +70,8 @@ export default class Day3 extends React.Component {
       <h1>Correct!</h1>
       <h2>{lvl3.correct}</h2>
       <div className="correct-incorrect">
-        {/* <img src={shame} alt="bells of shame" /> */}
-        <Link to='/end'>
+        <img src={book} alt="book" />
+        <Link to='/day4'>
         <button type="button" className="button" align="center"><span>Continue</span></button>
         </Link>
       </div>

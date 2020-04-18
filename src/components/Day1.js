@@ -17,24 +17,18 @@ export default class Day1 extends React.Component {
 
   handleClick1 = () => {
     this.setState({ showCorrect: true })
-    console.log('click1')
   }
 
   handleClick2 = () => {
     this.setState({ showIncorrect: true })
-    console.log('click2')
   }
 
   handleClick3 = () => {
     this.setState({ showCorrect: false, showIncorrect: false })
-    console.log('click3')
   }
 
 
   render() {
-    // console.log(this.state.levelCount)
-    console.log('correct', this.state.showCorrect)
-    console.log('incorrect', this.state.showIncorrect)
     const lvl1 = this.state.lvl1
     return (
     <>

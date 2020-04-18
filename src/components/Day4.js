@@ -2,16 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import data from '../data/data'
-import tpaper from '../assets/tpaper.gif'
-import two from '../assets/two.gif'
-import shopping from '../assets/shopping.gif'
-import share from '../assets/share.gif'
-import shame from '../assets/shame.gif'
+import chocolate from '../assets/chocolate.gif'
+import sticks from '../assets/sticks.gif'
+import taytos from '../assets/taytos.gif'
+import treatyoself from '../assets/treatyoself.gif'
+import bunny from '../assets/bunny.gif'
 
 
-export default class Day2 extends React.Component {
+export default class Day4 extends React.Component {
   state = {
-    lvl2: data.levels[1],    
+    lvl4: data.levels[3],   
     showCorrect: false,
     showIncorrect: false
   }
@@ -30,61 +30,61 @@ export default class Day2 extends React.Component {
 
 
   render() {
-    const lvl2 = this.state.lvl2
+    const lvl4 = this.state.lvl4
     return (
     <>
     {this.state.showCorrect === false && this.state.showIncorrect === false ?
     <section>
-      <h1>{lvl2.title}</h1>
-      <h2>{lvl2.scenario}</h2>
+      <h1>{lvl4.title}</h1>
+      <h2>{lvl4.scenario}</h2>
       
       <div>
-        <h3>{lvl2.question}</h3>
+        <h3>{lvl4.question}</h3>
       </div>
       
       <div className="answers">
         <div className="answer"
         onClick={this.handleClick2}>
-          <p>{lvl2.answers[0]}</p>
-          <img src={tpaper} alt="toilet paper" />
+          <p>{lvl4.answers[0]}</p>
+          <img src={sticks} alt="carrot sticks" />
+        </div>
+
+        <div className="answer"
+        onClick={this.handleClick1}>
+          <p>{lvl4.answers[2]}</p>
+          <img src={taytos} alt="Tayto crisps" />
         </div>
       
         <div className="answer"
         onClick={this.handleClick1}>
-          <p>{lvl2.answers[1]}</p>
-          <img src={two} alt="two of everything" />
-        </div>
-        
-        <div className="answer"
-        onClick={this.handleClick2}>
-          <p>{lvl2.answers[2]}</p>
-          <img src={shopping} alt="shopping" />
+          <p>{lvl4.answers[1]}</p>
+          <img src={chocolate} alt="chocolate bar" />
         </div>
         
       </div>
-
       </section>
       : null} 
 
       {this.state.showCorrect === false ? null :
       <>
       <h1>Correct!</h1>
-      <h2>{lvl2.correct}</h2>
+      <h2>{lvl4.correct}</h2>
       <div className="correct-incorrect">
-        <img src={share} alt="heart in a basket" />
-        <Link to='/day3'>
-      <button type="button" className="button" align="center"><span>Continue</span></button>
-      </Link>
+        <img src={treatyoself} alt="treat yo' self" />
+        <Link to='/end'>
+        <button type="button" className="button" align="center"><span>Continue</span></button>
+        </Link>
       </div>
+
       </>
       }
 
       {this.state.showIncorrect === false ? null :
           <>
           <h1>Incorrect Answer</h1>
-          <h2>{lvl2.incorrect}</h2>
+          <h2>{lvl4.incorrect}</h2>
           <div className="correct-incorrect">
-            <img src={shame} alt="bells of shame" />
+            <img src={bunny} alt="bunny" />
             <button type="button" className="button" align="center" onClick={this.handleClick3}><span>Try Again</span></button>
           </div>
         </>
